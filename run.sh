@@ -18,8 +18,8 @@ virtualenv -p python3 venv/deepspeech-train-venv/
 source venv/deepspeech-train-venv/bin/activate
 
 /paperspace/venv/deepspeech-train-venv/bin/python3 -m pip install --upgrade pip
-git clone --branch v0.9.3 https://github.com/mozilla/DeepSpeech
+#git clone --branch v0.9.3 https://github.com/mozilla/DeepSpeech
 cd /paperspace/DeepSpeech
 pip3 install --upgrade pip==20.2.2 wheel==0.34.2 setuptools==49.6.0
 pip3 install --upgrade -e .
-python setup.py install
+#python setup.py install
