@@ -20,3 +20,15 @@ pip3 install 'tensorflow-gpu==1.15.4'
 ls 
 pip3 install deepspeech-gpu
 python3 setup.py install
+
+## Test Model ## 
+# Download pre-trained English model files
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer
+
+# Download example audio files
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/audio-0.9.3.tar.gz
+tar xvf audio-0.9.3.tar.gz
+
+# Transcribe an audio file
+deepspeech --model deepspeech-0.9.3-models.pbmm --scorer deepspeech-0.9.3-models.scorer --audio audio/2830-3980-0043.wav
