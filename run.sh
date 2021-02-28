@@ -18,6 +18,7 @@ git clone --branch v0.9.3 https://github.com/mozilla/DeepSpeech
 cd /paperspace/DeepSpeech
 pip3 install --upgrade pip==20.2.2 wheel==0.34.2 setuptools==49.6.0
 pip3 install --upgrade -e .
+pip3 install pathlib sox progressbar urllib3
 python setup.py install
 pip3 uninstall tensorflow
 pip3 install 'tensorflow-gpu==1.15.4'
