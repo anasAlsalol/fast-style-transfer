@@ -1,7 +1,5 @@
 apt-get update -y
 apt install python3-pip -y
-pip3 install --upgrade -e .
-
 #create folders
 mkdir data
 mkdir data/bin
@@ -16,7 +14,6 @@ mkdir venv
 mkdir venv/deepspeech-train-venv
 virtualenv -p python3.6 venv/deepspeech-train-venv/
 source venv/deepspeech-train-venv/bin/activate
-
 git clone --branch v0.9.3 https://github.com/mozilla/DeepSpeech
 cd /paperspace/DeepSpeech
 pip3 install --upgrade pip==20.2.2 wheel==0.34.2 setuptools==49.6.0
