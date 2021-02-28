@@ -1,12 +1,8 @@
+#run style transfer on video
 apt-get update -y
 apt install python3-pip -y
-#create folders
-mkdir data
-mkdir data/bin
-#run style transfer on video
 
 # custome Code 
-
 
 apt-get install sox libsox-fmt-mp3 virtualenv python3-dev wget git -y
 apt-get dist-upgrade -y
