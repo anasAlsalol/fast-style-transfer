@@ -15,6 +15,6 @@ source venv/deepspeech-train-venv/bin/activate
 
 git clone --branch v0.9.3 https://github.com/mozilla/DeepSpeech
 cd /paperspace/DeepSpeech
-pip3 install --upgrade pip==20.2.2 wheel==0.34.2 setuptools==49.6.0
-pip3 install --upgrade -e .
+pip install --upgrade pip==20.2.2 wheel==0.34.2 setuptools==49.6.0
+pip install --upgrade -e .
 python setup.py install
